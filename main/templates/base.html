@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>{% block page_title %}A Warrior is revolving{% endblock %}</title>
+	<meta charset="utf-8">
+	
+	<!-- static resources -->
+	<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css">
+	<!-- Compiled and minified JavaScript -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+	      
+	<!-- cdn -->
+	<script src="https://cdn.rawgit.com/Dogfalo/materialize/master/dist/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+</head>
+
+<body>
+	<header>
+	</header>
+{% block content %}{% endblock %}
+</body>
+
